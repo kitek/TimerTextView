@@ -1,0 +1,28 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:2.1.2'
+  }
+}
+
+allprojects {
+  repositories {
+    mavenCentral()
+  }
+}
+
+ext {
+  minSdkVersion = 9
+  targetSdkVersion = 24
+  compileSdkVersion = 24
+  buildToolsVersion = '24.0.0'
+  sourceCompatibilityVersion = JavaVersion.VERSION_1_7
+  targetCompatibilityVersion = JavaVersion.VERSION_1_7
+}
+
+ext.deps = [
+    // Test dependencies
+    junit      : 'junit:junit:4.11'
+]
